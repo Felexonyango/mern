@@ -1,8 +1,8 @@
 const express =require('express')
 const app =express()
-// const connectDB = require("./db");
+const connectDB = require("./db");
 
-// connectDB()
+connectDB()
 app.get('/api',(req,res)=>{
    res.send('Hello from server, MERN stack docker github action testing')
 })
